@@ -1,0 +1,142 @@
+
+
+body,h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: 'Spartan', sans-serif;
+}
+/* header */
+
+.main-header{
+    background-color: #e0e0e0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+.logo-img{
+    width: 100px;
+}
+.menu-suru li{
+    padding: 24px 0;
+}
+.menu-suru li a {
+    padding: 27px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    position: relative;
+}
+
+.fix::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 30px;
+    height: 3px;
+    background-color: #3763eb !important;
+}
+.fix{
+    color: #3763eb !important;
+}
+.menu-suru li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 3px;
+    background-color: #3763eb;
+    transition: .4s;
+}
+.menu-suru li a:hover::after{
+    width: 30px;
+}
+/* drop down */
+.menu-suru li{
+    position: relative;
+}
+.menu-suru li ul {
+    position: absolute;
+    top: 160%;
+    left: 22px;
+    width: 220px;
+    background-color: #fff;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.menu-suru li:hover >ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.menu-suru li ul li {
+    padding: 16px 10px;
+    list-style: none;
+    text-align: left;
+}
+.menu-suru li ul li span {
+    width: 190px;
+    background-color: #3763eb;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 9px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+.difalt-button{
+    padding: 15px 35px;
+    background-color: #3763eb;
+    color: #fff;
+    border-radius: 550px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 25px;
+    transition: .4s;
+}
+.difalt-button:hover{
+    background-color: #fff;
+    color: #3763eb;
+}
+
+/* slider */
+
+.slider-section{
+    background-color: #ebeef1;
+}
+.slider-text {
+    margin-top: 175px;
+}
+.slider-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+.slider-text p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 25px 0;
+}
+.batton-2{
+    margin-left: 0;
+}
+.batton-2:hover{
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
+}
+.slider-img {
+    margin-left: 10px;
+    width: 800px;
+    height: 800px;
+    margin-top: -180px;
+}
+.slider-img img{
+    border-radius: 50%;
+    width: 800px;
+    height: 800px;
+}
